@@ -1,0 +1,178 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Picture Pets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+  </style>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  </head>
+
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container mb-3">
+          <div class="d-flex align-items-center">
+            <div class="site-logo mr-auto">
+              <a href="index.html">Picture Pets<span class="text-primary">.</span></a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="menu-wrap d-flex align-items-center">
+            <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
+              <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto ">
+                  <li class="active"><a href="" class="nav-link">Home</a></li>
+                  <li class="active"><a href="#about-section" class="nav-link">About</a></li>
+                  <li class="active"><a href="#inner-working-section" class="nav-link">How it works</a></li>
+                  <li><a href="upload.html" class="nav-link">Upload</a></li>
+                  <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                  <li><a href="order.html" class="nav-link">Order</a></li>
+                  <li class="active"><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+
+              <div class="top-social ml-auto">
+                <a href="#"><span class="fab fa-github"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+              </div>
+          </div>
+        </div>
+      </header>
+
+    <div class="ftco-blocks-cover-1">
+       
+      <div class="site-section-cover overlay">
+        <div class="container">
+          <div class="row align-items-center ">
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="text-cursive h5 text-red">Welcome To Picture Pets</span>
+              <h1 class="mb-3 font-weight-bold text-teal">Turn Your Photos Into Coloring Pages</h1>
+              <p>Upload, Download, or Order Your Personalized Coloring Book</p>
+              <p class="mt-5"><a href="#inner-working-section" class="btn btn-primary py-4 btn-custom-1">Learn More</a></p>
+            </div>
+            <div class="col-md-6 ml-auto align-self-end">
+              <img src="{% static 'images/f4b83056-45d8-4c90-9864-f9b4d6bd74a2.png' %}" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="about-section" class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0 position-relative">
+            <img src="{% static 'images/oreo1.png' %}"
+                 alt="Image"
+                 class="img-fluid"
+                 onmouseover="this.src='{% static 'images/oreo2.png' %}'"
+                 onmouseout="this.src='{% static 'images/oreo1.png' %}'">
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="text-cursive h5 text-red">About Us</span>
+            <h3 class="text-black">Bring Fun Life To Your Kids</h3>
+            <p><span>Turn your favorite memories into art.</span>
+               <span> Inspired by a peaceful dog walk through the rolling hills of the Cotswolds, these custom coloring pages let you relive the moment</span></p>
+               <p class="mt-5"><a href="#home-section" class="btn btn-primary py-4 btn-custom-1">Home</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="inner-working-section" class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="vcard-wrap mr-5">
+            <img src="{% static 'images/inner-working.gif' %}" alt="Image" class="vcard img-fluid">
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="text-cursive h5 text-red">How it works</span>
+            <h3 class="text-black">Using AI to generate colouring pages</h3>
+            <p><span>After you upload your favorite images, the AI jumps in to create a super fun coloring page based on that picture!</span>
+               <span> It works like magic: the AI uses its special "seeing" powers to spot all the cool shapes and lines, turning them into a fun line drawing with a friendly twist. Then, it adds extra details and makes sure the lines are just right for coloring, all while keeping the picture’s fun style!.</span></p>
+               <p class="mt-5"><a href="#home-section" class="btn btn-primary py-4 btn-custom-1">Home</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="contact-section" class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="vcard-wrap mr-5">
+            <img src="{% static 'images/letter_small.png' %}" alt="Image" class="vcard img-fluid">
+          </div>
+
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="text-cursive h5 text-red">Contact</span>
+            <h3 class="text-black">Why not drop us a line</h3>
+            <p><span>We welcome suggestions</span></p>
+            <textarea class="form-control" id="messageInput" rows="3" placeholder="Type your message here..."></textarea>
+            <button type="submit" class="btn btn-primary btn-custom-1 mt-3">Send Message</button>
+            <p class="mt-5"><a href="#home-section" class="btn btn-primary py-4 btn-custom-1">Home</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section py-5 bg-warning">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 d-flex">
+          <h2 class="text-white m-0">Fun colouring pages for kids</h2>
+          <a href="#" class="btn btn-primary btn-custom-1 py-3 px-5 ml-auto">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+</html>
+
